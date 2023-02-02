@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+   <script>
+       var text = "This Is Sample String";
+       var text2 = "new string";
+       let a = text.charAt(8);
+       console.log(a);
+
+       console.log("concat string");
+       var result = text.concat(' ', text2);
+       console.log(result);
+       console.log("length");
+       console.log(result.length);
+
+       var result2 = result.slice(8, 14);
+       console.log(result2);
+
+       var arr = text.slice(' ');
+       console.log(arr);
+
+       text = text.replace('String', 'text');
+       text = text.replace(/i/g, 'I');
+       console.log(text);
+
+
+       console.log("indext of 'is' in text");
+       console.log(text.indexOf("Is"));
+
+       console.log("last indext of 'I' in text");
+       console.log(text.lastIndexOf('I'));
+
+       console.log("substring  1 to 9")
+       var t = text.substr(1, 9);
+       console.log(t);
+
+       console.log("substring  3")
+       var t2 = text.substring(3);
+       
+       console.log(t2);
+
+   </script>
+</body>
+</html>
