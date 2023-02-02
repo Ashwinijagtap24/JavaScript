@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form style="border:groove; width:30%; padding:4px 7px 5px 6px;">
+        Enter a number : <input type="text" id="num1" /><br />
+        Enter b number :<input type="text" id="num2" /><br />
+        Result : <input type="text" id="num3" disabled /> <br />
+
+        <input type="button" value="add" onclick="Addition()">
+        <input type="button" value="sub" onclick="subtration()">
+        <input type="button" value="mul" onclick="multiply()">
+        <input type="button" value="div" onclick="division()">
+        <br/>
+        <b id=" b1"></b>
+        <i id="i1"></i>
+        <p id="p1"></p>
+        <h4 id="h"></h4>
+        
+
+        <script>
+            function Addition() {
+                var a = document.getElementById("num1").value; //read value
+                var b = document.getElementById("num2").value;
+
+                var sum = parseInt(a) + parseInt(b);
+                document.getElementById("num3").value = sum; //display value
+                document.getElementById("i1").innerHTML = "add" + sum;
+            }
+            function subtration() {
+                var a = document.getElementById("num1").value;
+                var b = document.getElementById("num2").value;
+
+                var sub= parseInt(a) - parseInt(b);
+                document.getElementById("num3").value = sub;
+                document.getElementById("b1").innerHTML = "sub is" + sub;
+                
+            }
+            function multiply() {
+                var a = document.getElementById("num1").value;
+                var b = document.getElementById("num2").value;
+
+                var sum = parseInt(a) * parseInt(b);
+                document.getElementById("num3").value = sum;
+            }
+            function division() {
+                var a = document.getElementById("num1").value;
+                var b = document.getElementById("num2").value;
+
+                var sum = parseInt(a) / parseInt(b);
+                document.getElementById("num3").value = sum;
+            }
+        </script>
+
+    </form>
+
+</body>
+</html>

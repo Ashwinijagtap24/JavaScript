@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var Book = {
+            bookid : 5,
+            bookname:"Xyz",
+            bookprice:560,
+            print: function () {
+                return this.bookid + " " + this.bookname + " " + this.bookprice
+            },
+            discount: function () {
+                var c = this.bookprice * 0.15;
+                this.bookprice = this.bookprice - c;
+                return this.bookprice;
+            }
+        }
+        console.log(Book.print());
+        console.log(Book.discount());
+    </script>
+</body>
+</html>

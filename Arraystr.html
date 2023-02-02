@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d2"></div>
+
+    <script>
+        var names = ["mona", "ashu", "tanu", "soni"];
+        names.push("sai");
+        names.shift("tina");
+        names.reverse();
+        var data1 = "<ol>"
+        var newElements = names.slice(1, 2);
+        for (var i = 0; i < names.length; i++) {
+            data1 += "<li>" + names[i] + "</li>";
+        }
+
+        data1 += "</ol>";
+        console.log(data1);
+        document.getElementById("d2").innerHTML = data1;
+        console.log(newElements);
+
+    </script>
+</body>
+</html>

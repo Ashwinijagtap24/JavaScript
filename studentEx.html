@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+   <script>
+       var student= {
+           studid: 102,
+           studname: "mona",
+           studmarks: 89,
+           print: function () {
+               return this.studid + " " + this.studname + " " + this.studmarks
+           },
+           grade: function () {
+               if (89 > 35) {
+                   console.log("pass");
+               }
+               else {
+                   console.log("fail");
+               }
+           }
+       }
+       console.log(student.print());
+       console.log(student.grade());
+
+   </script>
+</body>
+</html>

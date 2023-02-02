@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var product = {
+            prodid: 1,
+            prodname: "Mobile",
+            prodprice: 9000,
+            print: function () {
+                return this.prodid + " " + this.prodname + " " + this.prodprice
+            },
+            discount: function () {
+                var b = this.prodprice * 0.10;
+                this.prodprice = this.prodprice - b;
+                return this.prodprice;
+            }
+        }
+        console.log(product.print());
+        console.log(product.discount());
+       
+    </script>
+</body>
+</html>

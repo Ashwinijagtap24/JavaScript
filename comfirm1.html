@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Enter Username : <input type="text" id="u" /><br />
+    <br>
+    Enter Password : <input type="text" id="pass" /><br /><br>
+    Repeat Password : <input type="text" id="rep" /><br /><br> <span id="error1"></span>
+    <br><br />
+    select  Gender : <input type="radio" id="r1" name="gender" value="Female"/>Female
+    <input type="radio" id="r2" name="gender" value="male"/>male
+    <span id="error2"></span>
+    <br><br />
+    <input type="submit" value="Ok" onclick="return Check1()" />
+
+    <script>
+        function Check1() {
+            var a = document.getElementById("pass").value;
+            var b = document.getElementById("rep").value;
+            var r1 = document.getElementById("r1").Checked;
+            var r2 = document.getElementById("r2").Checked;
+
+
+            if (!a.match(b)) {
+                document.getElementById("error1").innerHTML = "password does not match";
+                return false;
+            }
+            if (a.match(b)) {
+                document.getElementById("error1").innerHTML = "";
+            }
+            if (r1 == false && r2 == false) {
+                document.getElementById("error2").innerHTML = "Please enter the gender";
+                return false;
+
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
